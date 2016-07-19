@@ -1,0 +1,43 @@
+<div class="" style="background-image:url('./public/images/PAY.jpg');width:100%;height:970px;background-repeat:no-repeat;background-size:cover">
+	<div class=" container">
+		<div class="row" style="padding-top:5%;margin-right:0px!important">
+			<p align="right"><a href="#/login" class="btn btn-primary">Logout</a></p></br>
+			<div class="" style="margin-top:3%;background:#fff;opacity:0.9;text-align:center;padding-bottom:20px">
+			
+				<p class="heading" style="color:#000!important;text-align:center">Student List with Installments</p>
+				
+					<!-- <input type="number" ng-model="vm.keyword" name="search" required="" placeholder="Enter ID of Student" style="text-align:center">
+					
+					
+					<input class="button-style" type="submit" ng-click="vm.submit()" name="" value="Search">
+					</br></br> -->
+				<table align="center" cellpadding="5px" cellspacing="5px">
+					<tr>
+						<th style="padding:5px;border:1px solid"> StudentId </th>
+						<th style="padding:5px;border:1px solid"> CourseId </th>
+						<th style="padding:5px;border:1px solid"> InstallmentPaid </th>
+						<th style="padding:5px;border:1px solid"> JoiningDate </th>
+						<th style="padding:5px;border:1px solid"> ModeOfPayment </th>
+						<th style="padding:5px;border:1px solid"> Course Fee </th>
+					
+					</tr>
+					<tr ng-repeat="d in details">
+						<td style="padding:5px;border:1px solid"> {{d.StudentId}} </td>
+
+						<td style="padding:5px;border:1px solid"> {{d.CourseId}} </td>
+
+						<td style="padding:5px;border:1px solid"> {{d.InstallmentPaid}} </td>
+
+						<td style="padding:5px;border:1px solid"> {{d.JoiningDate |  date:'yyyy-MM-dd'}} </td>
+
+						<td style="padding:5px;border:1px solid"> {{d.ModeOfPayment}} </td>
+
+						<td id="courseFee" style="padding:5px;border:1px solid;">{{d.CourseFee}}</td>
+
+					</tr>
+				</table>
+			<input class="submit" type="button" onclick="sendEmail()" value="Send">	
+			</div>
+		</div>
+	</div>
+</div>
