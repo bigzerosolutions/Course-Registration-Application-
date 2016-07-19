@@ -1,0 +1,69 @@
+<div style="background-image:url('./public/images/Graduation.jpg');width:100%;height:970px;background-repeat:no-repeat;background-size:cover">
+<div class="container" >
+	<p align="right"><a href="#/login" class="btn btn-primary">Logout</a></p></br>
+	<div class="row">
+		<div class="col-sm-1 col-md-3"></div>
+		<div class=" col-xs-12 col-sm-10 col-md-6" style="background:#fff;opacity:0.9">
+			<p class="heading" style="text-align:center;color:#000!important">Enrollment Form</p>
+	<form name="enrollStudent" id="enrollStudent" ng-submit="">
+		<table align="center">
+			<tr>
+				<td class="normal-font1">First Name :</td>
+				<td><input  type="text" ng-model="vm.firstName" name="firstName" required=""></td>
+			</tr>
+			<tr>
+				<td class="normal-font1">Last Name :</td>
+				<td><input type="text" ng-model="vm.secondName" name="secondName" required=""></td>
+			</tr>
+			<tr>
+				<td class="normal-font1">Student Address :</td>
+				<td><textarea ng-model="vm.studentAddress" name="studentAddress" required=""></textarea></td>
+			</tr>
+			<tr>
+				<td class="normal-font1">Email :</td>
+				<td><input type="email" ng-model="vm.studentEmail" name="studentEmail" required=""></td>
+			</tr>
+			<tr>
+				<td class="normal-font1">Contact Number :</td>
+				<td><input type="number" ng-model="vm.studentContact" name="studentContact" required=""></td>
+			</tr>
+			<tr>
+				<td class="normal-font1">Select Course :</td>
+				<td>
+					<select class="selectField" ng-model="vm.courseSelect" ng-options="o.label for o in options" name="courseSelect" required=""><option>select</option>
+						
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="normal-font1">Select Mode of Payment :</td>
+				<td>
+					<select  class="selectField" ng-model="vm.paymentType"  name="paymentSelect" id="paymentSelect" required="">
+						<option value="F">Full Payment</option>
+						<option value="I">Install Payment</option>
+					</select>
+  				</td>
+			</tr> 
+			<tr>
+				<td id="feepaid" class="normal-font1">Fee Paid :</td>
+				<td><input id="payedInstall" type="number" ng-model="vm.installmentPaid" name="installmentPaid" required="" ></td>
+			</tr>
+			<tr>
+				<td class="normal-font1">Joining Date :</td>
+				<td><input type="date" ng-model="vm.joinDate" name="joinDate" required=""></td>
+			</tr>
+		</table>
+		
+		</br></br>
+		<div align="center">
+		<input class="button-style" type="submit" ng-click="vm.submit()" name="">
+		<input class="button-style" type="button" ng-click="vm.clear()" name="" value="Clear All">
+		</br></br>
+		</div>
+	</form>
+	
+		</div>
+		<div class="col-sm-1 col-md-3"></div>
+	</div>
+</div>
+</div>
